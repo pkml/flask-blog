@@ -9,7 +9,7 @@ with sqlite3.connect("blog.db") as connection:
     c = connection.cursor()
 
     #create the table
-#    c.execute("""CREATE TABLE postes(title TEXT, post TEXT)""")
+    c.execute("""CREATE TABLE postes(title TEXT, post TEXT)""")
 
     #insert dummy data
     c.execute('INSERT INTO postes VALUES("gOOD", "I\'m good.")')
